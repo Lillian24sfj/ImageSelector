@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Selector</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <label for="imageSelect"> Velg Bilde </label>
+      <select name="imageSelect" id="imageSelect">
+        <option value="">Velg Bilde</option>
+        <option value="image1">Bilde 1</option>
+        <option value="image2">Bilde 2</option>
+        <option value="image3">Bilde 3</option>
+        <option value="image4">Bilde 4</option>
+        <option value="image5">Bilde 5</option>
+      </select>
+      <div id="imageDisplay">
+        <img id="selectedImage" src="" alt="Bildet som er valgt" />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
