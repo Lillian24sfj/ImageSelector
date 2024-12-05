@@ -1,53 +1,112 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
+  background-image: url("./bakgrunn.jpg");
+  background-size: cover;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   padding: 0;
-  background-color: #f2f2f2;
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: darkgreen;
+  text-decoration: underline;
+}
+label {
+  margin: 16px 0;
 }
 
 .container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #faf7f7;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
 }
 
 #imageDisplay {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 20px;
+  width: 60%;
+  height: 500px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: rgb(254, 246, 244);
+  margin-bottom: 24px;
 }
 
 #imageDisplay img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-label {
-  font-weight: bold;
-  text-align: center;
-  display: block;
-  margin-bottom: 10px;
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
 }
 
 #imageSelect {
-  width: 100%;
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  margin-top: 10px;
+  background-color: rgb(208, 228, 208);
+  color: darkgreen;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  text-decoration: none;
+  position: relative;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("arrow-down.png");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 20px 20px;
+  padding-right: 30px;
 }
 
 #imageSelect:hover {
-  background-color: #f2f2f2;
+  background-color: rgb(208, 228, 208);
+  color: darkgreen;
+  text-decoration: none;
+  border: 1px solid darkgreen;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 #imageSelect:focus {
   outline: none;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-color: darkgreen;
+  box-shadow: 0 0 5px darkgreen;
+}
+
+option {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgb(208, 228, 208);
+  color: darkgreen;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("arrow-down.png");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 20px 20px;
+  padding-right: 30px;
+}
+
+option:hover {
+  background-color: rgb(208, 228, 208);
+  color: darkgreen;
+  text-decoration: none;
+  border: 1px solid darkgreen;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+option:focus {
+  outline: none;
+  border-color: darkgreen;
+  box-shadow: 0 0 5px darkgreen;
 }
