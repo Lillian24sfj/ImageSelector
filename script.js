@@ -5,19 +5,19 @@ function changeImage() {
   const selectedOption = imageSelect.value;
 
   if (selectedOption === "image1") {
-    selectedImage.src = "./sotHund.jpg";
+    selectedImage.src = "./chihuahua.jpg";
     selectedImage.style.display = "block";
   } else if (selectedOption === "image2") {
-    selectedImage.src = "./sotHund2.jpg";
+    selectedImage.src = "./briller.jpg";
     selectedImage.style.display = "block";
   } else if (selectedOption === "image3") {
-    selectedImage.src = "./sotHund3.jpg";
+    selectedImage.src = "./hatt.jpg";
     selectedImage.style.display = "block";
   } else if (selectedOption === "image4") {
-    selectedImage.src = "./sotHund4.jpg";
+    selectedImage.src = "./tenner.jpg";
     selectedImage.style.display = "block";
   } else if (selectedOption === "image5") {
-    selectedImage.src = "./sotHund5.jpg";
+    selectedImage.src = "./skinn.jpg";
     selectedImage.style.display = "block";
   } else {
     selectedImage.style.display = "none";
